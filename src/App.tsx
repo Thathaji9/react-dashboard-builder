@@ -168,9 +168,9 @@ function App() {
   };
 
   const onDrop = (
-    layout: ReactGridLayout.Layout[],
+    _: ReactGridLayout.Layout[],
     droppedLayoutItem: ReactGridLayout.Layout,
-    event: Event
+    __: Event
   ) => {
     if (!draggingItem) {
       return;
