@@ -1,0 +1,111 @@
+.widget-content {
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: auto;
+    text-align: center;
+    font-size: 0.95em;
+    color: #444;
+}
+
+.widget-content {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.text-widget {
+    background-color: #e0f7fa;
+}
+
+.chart-widget {
+    background-color: #ffe0b2;
+}
+
+.table-widget {
+    background-color: #c8e6c9;
+    overflow-x: auto;
+}
+
+.table-widget table {
+    width: calc(100% - 10px);
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 0.85em;
+}
+
+.table-widget th, .table-widget td {
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: left;
+    word-break: break-word;
+}
+
+.table-widget th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.d3-widget {
+    background-color: #fce4ec;
+}
+
+.widget-actions {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    gap: 5px;
+    z-index: 2;
+}
+
+.edit-widget-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 0.8em;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    pointer-events: auto;
+}
+
+.edit-widget-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-1px);
+}
+
+.edit-widget-btn:active {
+    transform: translateY(0);
+}
+
+.remove-widget {
+    color: #f44336;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0 5px;
+    transition: color 0.2s ease, transform 0.1s ease;
+    pointer-events: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.remove-widget:hover {
+    color: #d32f2f;
+    transform: scale(1.1);
+}
+
+.remove-widget:active {
+    transform: scale(1);
+}

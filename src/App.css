@@ -1,0 +1,32 @@
+.react-grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.react-grid-item.react-grid-placeholder {
+  background: #add8e6;
+  border-radius: 8px;
+  opacity: 0.6;
+}
+
+.react-grid-item > .react-resizable-handle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  bottom: 0;
+  right: 0;
+  background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwIiB5PSIwIiAyMDh3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZ2ZSI+PGVsbGlwc2UgZmlsbD0iIzAwMDAwMCIgY3g9IjEwIiBjeT0iMTAiIHJ4PSIxMCIgcnk9IjEwIi8+PC9zdmc+') no-repeat center center;
+  background-size: contain;
+  cursor: se-resize;
+  z-index: 10;
+  opacity: 0.5;
+  transition: opacity 0.2s ease;
+}
+
+.react-grid-item:hover > .react-resizable-handle {
+  opacity: 1;
+}
